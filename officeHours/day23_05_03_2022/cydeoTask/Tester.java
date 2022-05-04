@@ -1,6 +1,6 @@
 package day23_05_03_2022.cydeoTask;
 
-public class Tester extends Employee {
+public final class Tester extends Employee {
 
     public Tester(String name, char gender, int age, String jobTitle, String employeeID, double salary) {
         super(name, gender, age, jobTitle, employeeID, salary);

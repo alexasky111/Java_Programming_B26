@@ -10,7 +10,7 @@ public class IsDescending {
 
 
     public static void main(String[] args) {
-        int [] arr = {4,4,3,2,1};
+        int [] arr = {0,4,3,2,1};
         System.out.println(isDesc(arr));
     }
 
