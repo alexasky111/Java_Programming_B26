@@ -1,4 +1,4 @@
-package day54_abstraction.homework;
+package day54_abstraction.animal.homework;
 
 public final class Ebay extends OnlineShopping implements AllowUsersToSell {
     @Override
