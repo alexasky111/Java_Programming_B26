@@ -1,4 +1,4 @@
-package day54_abstraction.animal.homework;
+package day54_abstraction.homework;
 
 public abstract class OnlineShopping extends Shopping implements Shipping {
 

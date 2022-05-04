@@ -1,4 +1,4 @@
-package day54_abstraction.animal.homework;
+package day54_abstraction.homework;
 
 public class UsingShopping {
     public static void main(String[] args) {
