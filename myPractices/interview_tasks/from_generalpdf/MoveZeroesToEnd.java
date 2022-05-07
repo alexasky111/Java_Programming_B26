@@ -1,4 +1,4 @@
-package interview_tasks;
+package interview_tasks.from_generalpdf;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package interview_tasks;
+package interview_tasks.nadirs_interview;
 
 public class NadirTaskPassword {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package interview_tasks;
+package interview_tasks.from_generalpdf;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
