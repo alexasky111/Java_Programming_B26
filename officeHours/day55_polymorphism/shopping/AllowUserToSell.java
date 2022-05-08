@@ -1,4 +1,5 @@
 package day55_polymorphism.shopping;
 
-public class AllowUserToSell {
+public interface AllowUserToSell {
+    void sell();
 }
