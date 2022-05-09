@@ -1,7 +1,5 @@
 package day55_polymorphism.clothes;
 
-import java.util.Objects;
-
 public class Store {
     public static void main(String[] args) {
         //all possible objects of tshirts
