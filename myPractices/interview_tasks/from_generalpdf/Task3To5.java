@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class Task3_4_5 {
+public class Task3To5 {
     public static void main(String[] args) {
         //To check Task 03
         changeValues(5, 6);
