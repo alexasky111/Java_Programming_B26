@@ -1,6 +1,6 @@
 package interview_tasks.from_generalpdf;
 
-public class Task20_21_22 {
+public class Task20_21_22_23 {
     /*
     Write a function:
 that, given a positive integer N, prints the consecutive numbers from 1 to N,
