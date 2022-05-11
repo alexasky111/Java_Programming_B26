@@ -1,8 +1,8 @@
 package day55_polymorphism.homework_book;
 
-public class JavaTextBook extends EBook{
+public class JavaTextbook extends EBook{
 
-    String fun;
+    boolean fun;
 
     @Override
     public void read() {

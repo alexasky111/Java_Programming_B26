@@ -2,40 +2,50 @@ package day55_polymorphism.homework_book;
 
 public class Library {
     public static void main(String[] args) {
-        //you can't instantiate from abstract class or interface
-        //all possible objects from the concrete class JavaTextBook
-        JavaTextBook javaTextBook1 = new JavaTextBook();//ref of itself
-        javaTextBook1.read();
-        javaTextBook1.download();
-        javaTextBook1.open();
-        System.out.println("javaTextBook1.fun = " + javaTextBook1.fun);
-        System.out.println("javaTextBook1.size = " + javaTextBook1.size);
-        System.out.println("javaTextBook1.name = " + javaTextBook1.name);
+        JavaTextbook book1 = new JavaTextbook();
+        book1.name = "Java Programming";
+        book1.size = 20.5;
+        book1.fun = true;
+        book1.read();
+        book1.open();
+        book1.download();
 
-        //ref of parent
-        EBook javaTextBook2 = new JavaTextBook();
-        javaTextBook2.read();
-        javaTextBook2.download();
-        javaTextBook2.open();
-        System.out.println("javaTextBook2.size = " + javaTextBook2.size);
-        System.out.println("javaTextBook2.name = " + javaTextBook2.name);
-        //javaTextBook4.fun -> no reference to sub class var fun
+        EBook book2 = new JavaTextbook();
+        book2.name = "Java Programming";
+        book2.size = 20.5;
+//        book2.fun = true; EBook reference does not have access to the fun variable
+        ((JavaTextbook)book2).fun = true; // cast the reference from the parent EBook to the child reference of JavaTextBook and that allows us to access the fun variable
+        book2.read();
+        book2.open();
+        book2.download();
 
-        //polymorphism->ability of an object to take different forms
-        Book javaTextBook3 = new JavaTextBook();
-        javaTextBook3.read();
+        Book book3 = new JavaTextbook();
+        book3.name = "Java Programming";
+//        book3.size = 20.5;
+//        book3.fun = true;
+        book3.read();
+//        book3.open();
+//        book3.download();
 
-        //javaTextBook3.download(); Book class doesn't have a reference to the .download() method, because Book doesn't implement Downloadable
+        // Book reference only has access to the name variable and the read variable
 
-        //javaTextBook3.open(); Book super class doesn't have a reference to the .open() method from its subclass Ebook
-        System.out.println("javaTextBook3.name = " + javaTextBook3.name);
-        //javaTextBook3.size; -> doesn't know how to access subclass var
-        //javaTextBook3.fun; -> doesn't know how to access grandchild var
+        Downloadable book4 = new JavaTextbook();
+//        book4.name = "Java Programming";
+//        book4.size = 20.5;
+//        book4.fun = true;
+//        book4.read();
+//        book4.open();
+        book4.download();
 
-        Downloadable javaTextBook4 = new JavaTextBook();
-        javaTextBook4.download();
-        //javaTextBook4.open(); -> no ref
-        //javaTextBook4.read(); -> no ref
+        // The only thing accessible by the Downloadable interface is the download method
+
+        JavaTextbook book5 = (JavaTextbook)book4;
+        // book4 was the interface reference, we cast the reference to be a JavaTextbook and assigned it to the book5 reference
+        book5.read();
+        book5.open();
+        book5.fun = false;
+
+
 
 
     }

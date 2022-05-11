@@ -8,7 +8,7 @@ public abstract class EBook extends Book implements Downloadable {
     - Declare an abstract methods:
         open()
      */
-    int size;
+    double size;
 
     public abstract void open();
 
