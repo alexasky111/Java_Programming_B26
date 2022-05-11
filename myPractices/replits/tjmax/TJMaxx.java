@@ -1,4 +1,4 @@
-package morning_practice.tjmax;
+package replits.tjmax;
 
 import java.util.ArrayList;
 import java.util.List;

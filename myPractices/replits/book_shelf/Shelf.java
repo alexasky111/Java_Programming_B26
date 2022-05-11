@@ -1,6 +1,4 @@
-package morning_practice.book_shelf;
-
-import morning_practice.book_shelf.Book;
+package replits.book_shelf;
 
 import java.util.ArrayList;
 import java.util.List;

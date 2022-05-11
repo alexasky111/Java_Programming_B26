@@ -1,4 +1,4 @@
-package morning_practice.tjmax;
+package replits.tjmax;
 
 public class Item {
     //private instance variables

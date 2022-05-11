@@ -1,7 +1,4 @@
-package morning_practice.book_shelf;
-
-import morning_practice.book_shelf.Book;
-import morning_practice.book_shelf.Shelf;
+package replits.book_shelf;
 
 import java.util.Scanner;
 
