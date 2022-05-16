@@ -17,6 +17,7 @@ public class Pen {
 
         if (color.equals("black") || color.equals("red") || color.equals("blue")) {
             this.inkColor = color;
+            System.out.println("new color is "+inkColor);
         } else {
             throw new InvalidColorException("Ink color must be either black, red, or blue");
         }
