@@ -1,8 +1,9 @@
 package morning_practice.saims_recent_practices.social_media;
 
+import java.time.LocalTime;
 import java.util.ArrayList;
 
-public class Instagram extends SocialMedia {
+public class Instagram extends SocialMedia implements hasPictures {
 
     private int numberOfFollowers;
     private int numberOfFollowings;
@@ -38,19 +39,40 @@ Note: use this code to get the current hour: LocalTime.now().getHour()
 
     @Override
     public void directMessaging(String username, String msg) {
-        System.out.println(msg+ " sent to "+username);
+        System.out.println(msg + " sent to " + username);
     }
 
     @Override
-    public void post(Object obj) {
+    public void post(Object body) {
 
+        pictures.add(new Picture(new byte[]{12, 2, 3}, "jpg", "my photo"));
     }
 
     @Override
     public void notifications() {
-
+        if(LocalTime.now().getHour()>=10 && LocalTime.now().getHour()<=20){
+            System.out.println("Notification");
+        }else{
+            System.out.println("Sleep mode");
+        }
     }
-    /*
+
+    @Override
+    public void likePicture() {
+        System.out.println("Liking picture");
+    }
+
+    @Override
+    public void unLikePicture() {
+        System.out.println("unliking picture");
+    }
+
+    @Override
+    public void sharePicture() {
+        System.out.println("sharing picture");
+    }
+
+/*
     • Create a class Instagram that will inherit the SocialMedia class
 • Add additional instance variables: number of followers, number of
 followings, and pictures (ArrayList of Pictures)

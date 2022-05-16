@@ -105,7 +105,7 @@ Note: use this code to get the current hour: LocalTime.now().getHour()
     @Override
     public void post(Object obj) {
 
-        posts.add(new Post());
+        posts.add(new Post("New Post"));
 
     }
 
@@ -178,6 +178,29 @@ by one.
         numberOfGroups--;
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getNumberOfFriends() {
+        return numberOfFriends;
+    }
+
+    public void setNumberOfFriends(int numberOfFriends) {
+        this.numberOfFriends = numberOfFriends;
+    }
+
+    public ArrayList<Post> getPosts() {
+        return posts;
+    }
+
+    public void setPosts(ArrayList<Post> posts) {
+        this.posts = posts;
+    }
     /*
     Create a class for a Facebook which inherits the SocialMedia class and has
 additional instance variables:

@@ -23,8 +23,8 @@ import java.time.format.DateTimeFormatter;
     private String body;
     final private String dateTime;
 
-    public Post(){
-        this.body = getBody();
+    public Post(String body){
+        setBody(body);
         this.dateTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("MMM dd, yyyy | hh:mm a"));
     }
 
