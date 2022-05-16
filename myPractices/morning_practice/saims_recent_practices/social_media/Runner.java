@@ -51,6 +51,12 @@ public class Runner {
             }
         }
 
+        for(SocialMedia object : objects){
+            if(object instanceof Instagram){
+                ((Instagram) object).likePicture();
+            }
+        }
+
 
             String res = "";
             for (int i = 0; i < objects.size(); i++) {
@@ -81,9 +87,9 @@ Facebook and Instagram objects +
 - Find all the Facebook objects that had less than 5000 friends to
 they could be added +
 - Go through all the Instagram objects and like a picture from each
-object
+object +
 - Check which user has both Instagram and Facebook object by
-comparing their full names
+comparing their full names +
          */
 
 

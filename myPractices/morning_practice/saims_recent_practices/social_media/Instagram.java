@@ -59,6 +59,7 @@ public class Instagram extends SocialMedia implements hasPictures {
 
         }
         this.fullName = fullName;
+        this.pictures = new ArrayList<>();
     }
     /*
     • Implement all the abstract methods coming from the Social Media class
