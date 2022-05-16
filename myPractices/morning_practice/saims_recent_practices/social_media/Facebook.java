@@ -107,6 +107,7 @@ Note: use this code to get the current hour: LocalTime.now().getHour()
 
         posts.add(new Post("New Post"));
 
+        System.out.println(obj.toString());
     }
 
     @Override
