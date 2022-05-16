@@ -1,4 +1,4 @@
-package day58_exceptions;
+package day58_exceptions.person;
 
 public class TryWithInheritance {
     public static void main(String[] args) {

@@ -1,4 +1,6 @@
-package day58_exceptions;
+package day58_exceptions.person;
+
+import day58_exceptions.person.Person;
 
 public class PersonObject {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package day58_exceptions;
+package day58_exceptions.person;
 
 import org.w3c.dom.ls.LSOutput;
 
