@@ -1,5 +1,7 @@
 package morning_practice.saims_recent_practices.social_media;
 
+import java.util.Arrays;
+
 public class Picture {
     private final byte [] image;
     private final String extension;
@@ -25,6 +27,15 @@ public class Picture {
         this.image = image;
         this.extension = extension;
         this.caption = caption;
+    }
+
+    @Override
+    public String toString() {
+        return "Picture{" +
+                "image=" + Arrays.toString(image) +
+                ", extension='" + extension + '\'' +
+                ", caption='" + caption + '\'' +
+                '}';
     }
 
     /*

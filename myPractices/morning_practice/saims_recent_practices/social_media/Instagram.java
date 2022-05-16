@@ -5,23 +5,60 @@ import java.util.ArrayList;
 
 public class Instagram extends SocialMedia implements hasPictures {
 
+
     private int numberOfFollowers;
     private int numberOfFollowings;
     private ArrayList<Picture> pictures;
+
+    public int getNumberOfFollowers() {
+        return numberOfFollowers;
+    }
+
+    public void setNumberOfFollowers(int numberOfFollowers) {
+        this.numberOfFollowers = numberOfFollowers;
+    }
+
+    public int getNumberOfFollowings() {
+        return numberOfFollowings;
+    }
+
+    public void setNumberOfFollowings(int numberOfFollowings) {
+        this.numberOfFollowings = numberOfFollowings;
+    }
+
+
+    public ArrayList<Picture> getPictures() {
+        return pictures;
+    }
+
+    public void setPictures(ArrayList<Picture> pictures) {
+        this.pictures = pictures;
+    }
 
     static {
         SocialMedia.platform = "Instagram";
     }
 
-    public Instagram(String username, String password) {
+    public Instagram(String username, String password, String fullName) {
 
         this.username = username;
+
         if (password.contains(username)) {
             System.out.println("Password contained username. Default password created: ");
             this.password = "password";
         } else {
             this.password = password;
         }
+        for (int i = 0; i < fullName.length(); i++) {
+
+            if (!Character.isLetter(fullName.charAt(i)) && fullName.charAt(i) != ' ') {
+                System.out.println("invalid name");
+                this.fullName = "no name";
+                break;
+            }
+
+        }
+        this.fullName = fullName;
     }
     /*
     • Implement all the abstract methods coming from the Social Media class
@@ -44,15 +81,16 @@ Note: use this code to get the current hour: LocalTime.now().getHour()
 
     @Override
     public void post(Object body) {
+        System.out.println("adding new photo" + body);
+        getPictures().add((Picture) body);
 
-        pictures.add(new Picture(new byte[]{12, 2, 3}, "jpg", "my photo"));
     }
 
     @Override
     public void notifications() {
-        if(LocalTime.now().getHour()>=10 && LocalTime.now().getHour()<=20){
+        if (LocalTime.now().getHour() >= 10 && LocalTime.now().getHour() <= 20) {
             System.out.println("Notification");
-        }else{
+        } else {
             System.out.println("Sleep mode");
         }
     }

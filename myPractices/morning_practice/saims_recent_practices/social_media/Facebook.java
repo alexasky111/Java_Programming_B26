@@ -38,7 +38,7 @@ their username at the end
 
         for (int i = 0; i < fullName.length(); i++) {
 
-            if (!Character.isLetter(fullName.charAt(i))) {
+            if (!Character.isLetter(fullName.charAt(i)) && fullName.charAt(i) != ' ') {
                 System.out.println("invalid name");
                 this.fullName = "no name";
                 break;
@@ -105,9 +105,9 @@ Note: use this code to get the current hour: LocalTime.now().getHour()
     @Override
     public void post(Object obj) {
 
-        posts.add(new Post("New Post"));
+        posts.add((Post)obj); //down casting
 
-        System.out.println(obj.toString());
+        System.out.println(obj);
     }
 
     @Override
