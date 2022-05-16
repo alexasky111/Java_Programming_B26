@@ -17,9 +17,10 @@ public class Facebook extends SocialMedia implements hasGroups {
     }
 
     public Facebook(String username, String password) {
-
+        this.username=username;
         if (password.contains(username)) {
-            System.out.println("Password contained username");
+            System.out.println("Password contained username. Default password created: ");
+            this.password = "password";
         } else {
             this.password = password;
         }
