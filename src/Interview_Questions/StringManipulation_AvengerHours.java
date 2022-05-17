@@ -2,7 +2,7 @@ package Interview_Questions;
 
 import java.util.Arrays;
 
-public class StringManipulation {
+public class StringManipulation_AvengerHours {
     public static void main(String[] args) {
         String sentence = "Java is the best programming language";
         String word = "java";
