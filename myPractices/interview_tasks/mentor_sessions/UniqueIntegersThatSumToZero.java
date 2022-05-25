@@ -1,7 +1,25 @@
 package interview_tasks.mentor_sessions;
 
-public class UniqueIntegersThatSumToZero {
+import java.util.Arrays;
 
+public class UniqueIntegersThatSumToZero {
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(sumUpToZero(5)));
+        /*
+        num = 5;
+       {-4 -2 0 2 4 }
+        0   1 2 3 4
+         */
+
+    }
+
+    public static int[] sumUpToZero(int num){
+        int [] arr = new int[num];
+        for (int i = 0; i < num; i++) {
+            arr[i] = i * 2 - num + 1;
+        }
+        return arr;
+    }
 
 
 
