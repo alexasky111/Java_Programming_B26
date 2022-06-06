@@ -15,12 +15,12 @@ public class ConcateTwoArrays {
         int [] concatenatedArr = new int [length];
         int index = 0;
 
-        for (int i = 0; i < arr.length; i++) {
-            concatenatedArr[index] = arr[i];
+        for (int j : arr) {
+            concatenatedArr[index] = j;
             index++;
         }
-        for (int i = 0; i < arr1.length; i++) {
-            concatenatedArr[index] = arr1[i];
+        for (int j : arr1) {
+            concatenatedArr[index] = j;
             index++;
         }
         return concatenatedArr;
