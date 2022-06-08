@@ -6,16 +6,16 @@ import java.util.Iterator;
 
 public class RemoveWithIterator {
     public static void main(String[] args) {
-        ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(1, 6, 333, 4, 2, 888, 7, 99, 9, 101, 200, 300));
+        ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(1, 6, 333, 4, 2, 888,1000,2000, 7, 99, 9, 101, 200, 300));
 
-        System.out.println(removeWithIterator(list1));
+    System.out.println(removeWithIterator(list1));
 
-        for (int i = 0; i < list1.size(); i++) {
-            if (list1.get(i) < 10) {
-                list1.remove(list1.get(i));
-            }
-        }
-        System.out.println(list1);
+//        for (int i = 0; i < list1.size(); i++) {
+//            if (list1.get(i) < 10) {
+//                list1.remove(list1.get(i));
+//            }
+//        }
+//        System.out.println(list1);
 
     }
 
