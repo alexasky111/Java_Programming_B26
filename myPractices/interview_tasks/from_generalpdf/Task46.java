@@ -2,14 +2,14 @@ package interview_tasks.from_generalpdf;
 
 import java.util.ArrayList;
 
-public class TAsk46 {
+public class Task46 {
     /*
     //46
  String a="aaa10ss20bb30";
  output > 60
      */
     public static void main(String[] args) {
-        String a = "aaa10ss20bb30";
+        String a = "aaa10ss20bb31a1";
         System.out.println(returnSumOfNums(a));
     }
 
@@ -19,7 +19,6 @@ public class TAsk46 {
         String res = "";
 
         for (int i = 0; i < str.length() - 1; i++) {
-
             if (Character.isDigit(str.charAt(i))) {
                 res += str.charAt(i);
             }
@@ -32,8 +31,12 @@ public class TAsk46 {
             if (Character.isDigit(str.charAt(str.length() - 1))) {
                 res += str.charAt(str.length() - 1);
                 sum += Integer.parseInt(res);
-            }else{
+            } else {
                 sum += Integer.parseInt(res);
+            }
+        } else {
+            if (Character.isDigit(str.charAt(str.length() - 1))) {
+                sum += Integer.parseInt(str.charAt(str.length() - 1) + "");
             }
         }
 
