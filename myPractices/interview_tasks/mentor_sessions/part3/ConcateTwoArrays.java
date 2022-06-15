@@ -15,8 +15,8 @@ public class ConcateTwoArrays {
         int [] concatenatedArr = new int [length];
         int index = 0;
 
-        for (int j : arr) {
-            concatenatedArr[index] = j;
+        for (int i : arr) {
+            concatenatedArr[index] = i;
             index++;
         }
         for (int j : arr1) {
