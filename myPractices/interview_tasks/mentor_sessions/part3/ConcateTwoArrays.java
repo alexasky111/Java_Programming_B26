@@ -24,9 +24,6 @@ public class ConcateTwoArrays {
             index++;
         }
         return concatenatedArr;
-
-
-
     }
     /*
     Write a return method that can concatenate two arrays

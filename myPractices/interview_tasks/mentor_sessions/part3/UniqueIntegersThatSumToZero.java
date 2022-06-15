@@ -9,8 +9,7 @@ public class UniqueIntegersThatSumToZero {
         num = 5;
        {-4 -2 0 2 4 }
         0   1 2 3 4
-         */
-
+         */ 
     }
 
     public static int[] sumUpToZero(int num){
@@ -20,11 +19,6 @@ public class UniqueIntegersThatSumToZero {
         }
         return arr;
     }
-
-
-
-
-
         /*
     13) Array - N unique integers that sum up to 0
 Write a function:

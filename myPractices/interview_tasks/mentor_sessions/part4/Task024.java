@@ -4,13 +4,11 @@ public class Task024 {
     public static void main(String[] args) {
 
         System.out.println(reverseNegativeNum(-123));
-
     }
     /*
     24) Number - Reverse negative number
 Write a return method that can reverse negative number and return it as int
      */
-
     public static int reverseNegativeNum(int num){
         //-123
 
