@@ -9,41 +9,35 @@ public class Task46 {
  output > 60
      */
     public static void main(String[] args) {
-        String a = "aaa10ss20bb31a1";
+        String a = "aaa10ss20bb30";
         System.out.println(returnSumOfNums(a));
     }
 
     public static int returnSumOfNums(String str) {
-        ArrayList<Integer> list = new ArrayList<>();
+
         int sum = 0;
         String res = "";
+        boolean b1 = Character.isDigit(str.charAt(str.length() - 1));
 
         for (int i = 0; i < str.length() - 1; i++) {
             if (Character.isDigit(str.charAt(i))) {
                 res += str.charAt(i);
             }
             if (Character.isDigit(str.charAt(i)) && !Character.isDigit(str.charAt(i + 1))) {
-                list.add(Integer.parseInt(res));
+                sum += Integer.parseInt(res);
                 res = "";
             }
         }
         if (!res.isEmpty()) {
-            if (Character.isDigit(str.charAt(str.length() - 1))) {
+            if (b1) {
                 res += str.charAt(str.length() - 1);
-                sum += Integer.parseInt(res);
-            } else {
-                sum += Integer.parseInt(res);
             }
+            sum += Integer.parseInt(res);
         } else {
-            if (Character.isDigit(str.charAt(str.length() - 1))) {
+            if (b1) {
                 sum += Integer.parseInt(str.charAt(str.length() - 1) + "");
             }
         }
-
-        for (int i = 0; i < list.size(); i++) {
-            sum += list.get(i);
-        }
-
 
         return sum;
     }
