@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Task027 {
     public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(52, 45, 32, 64, 12, 87, 78, 98, 23, 7));
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(21,1,2,6,8,32));
         System.out.println(sortInAscending(list));
     }
     /*
