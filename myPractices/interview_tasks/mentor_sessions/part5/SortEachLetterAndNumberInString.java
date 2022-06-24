@@ -1,4 +1,4 @@
-package morning_practice.saims_recent_practices.maps_practice;
+package interview_tasks.mentor_sessions.part5;
 
 import java.util.ArrayList;
 import java.util.Arrays;
