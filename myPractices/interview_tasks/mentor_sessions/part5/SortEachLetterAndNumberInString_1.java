@@ -3,7 +3,7 @@ package interview_tasks.mentor_sessions.part5;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class SortEachLetterAndNumberInString {
+public class SortEachLetterAndNumberInString_1 {
     public static void main(String[] args) {
         String str = "1DC501GCCCA098911a";
         System.out.println(sortString(str));

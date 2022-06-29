@@ -2,7 +2,7 @@ package interview_tasks.mentor_sessions.part5;
 
 import java.util.Arrays;
 
-public class SortLettersAndNumsFromAlphanumericStr {
+public class SortLettersAndNumsFromAlphanumericStr_2 {
 
     public static void main(String[] args) {
         String input = "DC501GCCCA098911";
